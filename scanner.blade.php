@@ -9,7 +9,6 @@
           href="style.css">
     <title>QR Code Scanner / Reader
     </title>
-    <script src="https://unpkg.com/html5-qrcode"></script>
 <style>
     /* style.css file*/
 body {
@@ -97,9 +96,7 @@ video {
     </div>
     <!-- <div id="result" style="text-align: justify;">
             </div> -->
-    <script
-        src="https://unpkg.com/html5-qrcode">
-    </script>
+    <script src="https://unpkg.com/html5-qrcode"></script>
     <script src="script.js"></script>
  <script>
 
