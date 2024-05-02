@@ -101,13 +101,8 @@ video {
         src="https://unpkg.com/html5-qrcode">
     </script>
     <script src="script.js"></script>
-</body>
- 
-</html>
-<script>
-    
-// script.js file
- 
+ <script>
+
 function domReady(fn) {
     if (
         document.readyState === "complete" ||
@@ -120,14 +115,10 @@ function domReady(fn) {
 }
  
 domReady(function () {
- 
-    // If found you qr code
     function onScanSuccess(decodeText, decodeResult) {
         // alert("QR is : " + decodeText, decodeResult);
-
         var data = decodeText, decodeResult;
         window.location.href= data;
-        // alert(data);
         // document.getElementById("result").innerHTML = data;
     }
  
@@ -138,3 +129,5 @@ domReady(function () {
     htmlscanner.render(onScanSuccess);
 });
 </script>
+</body>
+</html>
