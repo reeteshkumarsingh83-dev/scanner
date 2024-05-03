@@ -97,7 +97,6 @@ video {
     <!-- <div id="result" style="text-align: justify;">
             </div> -->
     <script src="https://unpkg.com/html5-qrcode"></script>
-    <script src="script.js"></script>
  <script>
 
 function domReady(fn) {
@@ -113,10 +112,9 @@ function domReady(fn) {
  
 domReady(function () {
     function onScanSuccess(decodeText, decodeResult) {
-        // alert("QR is : " + decodeText, decodeResult);
+        alert("QR is : " + decodeText, decodeResult);
         var data = decodeText, decodeResult;
         window.location.href= data;
-        // document.getElementById("result").innerHTML = data;
     }
  
     let htmlscanner = new Html5QrcodeScanner(
